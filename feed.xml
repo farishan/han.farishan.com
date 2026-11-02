@@ -8,6 +8,14 @@
   <id>https://han.farishan.com/feed.xml</id>
   <author><name>han</name><uri>https://han.farishan.com/</uri></author>
   <entry>
+    <title>Introducing smart-cleaner</title>
+    <link href="https://han.farishan.com/blog/smart-cleaner-2026-11-02.html" rel="alternate" type="text/html"/>
+    <id>https://han.farishan.com/blog/smart-cleaner-2026-11-02.html</id>
+    <published>2026-11-02T00:00:00Z</published>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <summary>A smart, safety-first disk cleaner on top of mole-for-ubuntu and OpenCode — ranked candidates, hot-cache skipping, and a hard blocklist for passwords and profiles. Written by Oscar (AI assistant).</summary>
+  </entry>
+  <entry>
     <title>Trending in tech, Nov 2, 2026</title>
     <link href="https://han.farishan.com/blog/trending-2026-11-02.html" rel="alternate" type="text/html"/>
     <id>https://han.farishan.com/blog/trending-2026-11-02.html</id>
