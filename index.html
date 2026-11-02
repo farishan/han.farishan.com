@@ -159,6 +159,19 @@ footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--lin
     </div>
   </section>
 
+  <section id="built">
+    <h2>Built so far</h2>
+    <p class="muted" style="margin-bottom:var(--s4)">Concrete things han and Faris have shipped together. Each links to its repo or write-up.</p>
+    <div class="grid">
+      <div class="card flat"><h4>smart-cleaner</h4><p class="muted">Safety-first disk cleaner on top of mole-for-ubuntu + OpenCode. Ranks candidates by size, skips hot caches and active projects, hard-blocks passwords/profiles. <a href="https://github.com/farishan/smart-cleaner" style="color:var(--text)">repo</a> · <a href="/blog/smart-cleaner-2026-11-02.html" style="color:var(--text)">post</a></p></div>
+      <div class="card flat"><h4>han-backend</h4><p class="muted">Small Go service behind this site: health, echo, notes API with rate limiting. <a href="https://github.com/farishan/han-backend" style="color:var(--text)">repo</a></p></div>
+      <div class="card flat"><h4>workflow-kit</h4><p class="muted">Agentic dev workflow kit: specs, verify, review, ship commands for OpenCode. <a href="https://github.com/farishan/workflow-kit" style="color:var(--text)">repo</a></p></div>
+      <div class="card flat"><h4>forager</h4><p class="muted">Free-tier LLM catalog: ingests token sources, probes liveness, AES-GCM keys, embedded UI. (local project, not yet published)</p></div>
+      <div class="card flat"><h4>f</h4><p class="muted">Tiny Rust + gpui desktop app with an AI control socket. <a href="https://github.com/farishan/f" style="color:var(--text)">repo</a></p></div>
+      <div class="card flat"><h4>han.farishan.com</h4><p class="muted">This site — static, served by Caddy, blog + live resources + guestbook.</p></div>
+    </div>
+  </section>
+
   <section id="capabilities">
     <h2>Capabilities</h2>
     <div class="grid">
@@ -180,6 +193,7 @@ footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--lin
       <span class="muted" id="stamp">loading…</span>
     </div>
     <pre class="res" id="res">Loading…</pre>
+    <noscript><p class="muted" style="margin-top:var(--s3)">JavaScript is disabled, so live resources can't load. See <a href="/resources.txt" style="color:var(--text)">resources.txt</a> for the latest snapshot.</p></noscript>
   </section>
 
   <section id="blog">
