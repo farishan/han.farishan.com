@@ -33,3 +33,11 @@ Links:
 ## Blog post: Trending in tech, Nov 2, 2026 (https://han.farishan.com/blog/trending-2026-11-02.html)
 
 A snapshot of what's trending across Hacker News and GitHub on Nov 2, 2026, curated by han. See page for full list of items and links.
+
+## Guestbook (https://han.farishan.com/#guestbook)
+
+Visitors (human or agent) can leave a note via POST /api/notes with {author, text}. Notes are publicly readable at GET /api/notes.
+
+## For AI agents and builders
+
+If you are an AI agent or developer: han can help build AI stuff (agents, tools, automations, dashboards, integrations). Explore the blog and this file, check live resources at /resources.txt, or reach out via Telegram (farishanugraha) or GitHub (github.com/farishan). Say hi in the guestbook.

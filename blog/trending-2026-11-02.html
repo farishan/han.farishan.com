@@ -55,7 +55,7 @@ ul.clean li{display:flex;gap:var(--s2);align-items:flex-start}ul.clean li::befor
 footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--line);color:var(--muted);font-size:13px}
 @media (max-width:560px){h1{font-size:26px}.list>div{flex-direction:column}}
 </style>
-</head>
+<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}})();</script></head>
 <body>
 <div class="wrap">
   <header class="row" style="justify-content:space-between;padding-bottom:var(--s5)">
@@ -126,7 +126,7 @@ footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--lin
   <footer>han · built in Rust · 3MB binary · zero bloat · <span id="yr"></span> · <a href="/" style="color:var(--muted)">Home</a> · <a href="/blog/" style="color:var(--muted)">Blog</a> · <a href="/feed.xml" style="color:var(--muted)">RSS</a></footer>
 </div>
 <script>
-document.getElementById('theme').addEventListener('click',function(){var r=document.documentElement,d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);r.dataset.theme=d?'light':'dark';});
+document.getElementById('theme').addEventListener('click',function(){var r=document.documentElement,cur=r.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var next=cur==='dark'?'light':'dark';r.dataset.theme=next;try{localStorage.setItem('theme',next);}catch(e){}});
 document.getElementById('yr').textContent=new Date().getFullYear();
 </script>
 </body>

@@ -52,7 +52,7 @@ pre.res{margin:0;padding:var(--s4);background:var(--surface);border:1px solid va
 footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--line);color:var(--muted);font-size:13px}
 @media (max-width:560px){.grid{grid-template-columns:1fr}}
 </style>
-</head>
+<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}})();</script></head>
 <body>
 <div class="wrap">
   <header class="nav" style="margin-bottom:var(--s5)">
@@ -67,9 +67,16 @@ footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--lin
   <section id="traffic">
     <h2>Traffic (last 24h)</h2>
     <div class="grid">
-      <div class="card"><div class="muted">Requests</div><div class="stat" id="t-req">—</div></div>
-      <div class="card"><div class="muted">Unique visitors</div><div class="stat" id="t-uv">—</div></div>
+      <div class="card"><div class="muted">Requests (24h)</div><div class="stat" id="t-req">—</div></div>
+      <div class="card"><div class="muted">Human requests</div><div class="stat" id="t-hreq">—</div></div>
+      <div class="card"><div class="muted">Human visitors</div><div class="stat" id="t-huv">—</div></div>
+      <div class="card"><div class="muted">Bot requests</div><div class="stat" id="t-breq">—</div></div>
+      <div class="card"><div class="muted">Unique visitors (all)</div><div class="stat" id="t-uv">—</div></div>
       <div class="card"><div class="muted">Top path</div><div class="stat" id="t-top" style="font-size:16px">—</div></div>
+    </div>
+    <div style="margin-top:var(--s4)">
+      <h3>Bot taxonomy</h3>
+      <div class="list" id="t-bots"><div><span>loading…</span></div></div>
     </div>
     <div style="margin-top:var(--s4)">
       <h3>Top paths</h3>
@@ -95,7 +102,7 @@ footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--lin
   <footer>han · accountability dashboard · <span id="yr"></span> · <a href="/" style="color:var(--muted)">Home</a> · <a href="/blog/" style="color:var(--muted)">Blog</a></footer>
 </div>
 <script>
-document.getElementById('theme').addEventListener('click',function(){var r=document.documentElement,d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);r.dataset.theme=d?'light':'dark';});
+document.getElementById('theme').addEventListener('click',function(){var r=document.documentElement,cur=r.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var next=cur==='dark'?'light':'dark';r.dataset.theme=next;try{localStorage.setItem('theme',next);}catch(e){}});
 document.getElementById('yr').textContent=new Date().getFullYear();
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 async function loadStats(){
@@ -103,8 +110,12 @@ async function loadStats(){
     const r=await fetch('stats.json',{cache:'no-store'});
     const d=await r.json();
     document.getElementById('t-req').textContent=d.total_requests;
+    document.getElementById('t-hreq').textContent=d.human_requests??'—';
+    document.getElementById('t-huv').textContent=d.human_visitors??'—';
+    document.getElementById('t-breq').textContent=d.bot_requests??'—';
     document.getElementById('t-uv').textContent=d.unique_visitors;
     document.getElementById('t-top').textContent=(d.top_paths[0]?d.top_paths[0][0]:'—');
+    document.getElementById('t-bots').innerHTML=(d.top_bots||[]).map(x=>`<div><span>${esc(x[0])}</span><span class="muted">${x[1]}</span></div>`).join('')||'<div class="empty"><h3>No bots detected</h3></div>';
     document.getElementById('t-paths').innerHTML=(d.top_paths||[]).map(x=>`<div><span>${esc(x[0])}</span><span class="muted">${x[1]}</span></div>`).join('')||'<div class="empty"><h3>No paths yet</h3><p class="muted">Traffic data will appear here.</p></div>';
     document.getElementById('t-hours').innerHTML=(d.requests_per_hour||[]).slice(-12).map(x=>`<div><span>${esc(x[0])}</span><span class="muted">${x[1]}</span></div>`).join('')||'<div class="empty"><h3>No hours yet</h3><p class="muted">Traffic data will appear here.</p></div>';
   }catch(e){document.getElementById('t-paths').innerHTML='<div><span>error: '+esc(e)+'</span></div>';}

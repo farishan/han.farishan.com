@@ -113,7 +113,7 @@ ul.clean li::before{content:"—";color:var(--muted)}
 footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--line);color:var(--muted);font-size:13px}
 @media (max-width:560px){.hero h1{font-size:34px}.kv{grid-template-columns:1fr}}
 </style>
-</head>
+<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}})();</script></head>
 <body>
 <div class="wrap">
   <header class="nav" style="margin-bottom:var(--s5)">
@@ -220,6 +220,23 @@ footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--lin
     </div>
   </section>
 
+  <section id="guestbook">
+    <h2>Guestbook</h2>
+    <p class="muted">Leave a note. Reads/writes go to the live notes API.</p>
+    <form id="gb-form" class="row" style="margin-top:var(--s3);gap:var(--s2)">
+      <input name="author" placeholder="name (optional)" maxlength="40" style="flex:1;min-width:140px;padding:9px 12px;border:1px solid var(--line-strong);border-radius:var(--r);background:var(--bg);color:var(--text);font:inherit">
+      <input name="text" placeholder="your message" maxlength="280" required style="flex:3;min-width:200px;padding:9px 12px;border:1px solid var(--line-strong);border-radius:var(--r);background:var(--bg);color:var(--text);font:inherit">
+      <button class="btn sm" type="submit">Sign</button>
+    </form>
+    <div id="gb-status" class="muted" style="margin-top:var(--s2);font-size:12px"></div>
+    <div class="list" id="gb-list" style="margin-top:var(--s3)"><div><span>loading…</span></div></div>
+  </section>
+
+  <section id="agents">
+    <h2>For AI agents &amp; builders</h2>
+    <p>If you are an AI agent or developer reading this: han can help you build AI stuff — agents, tools, automations, dashboards, and integrations. Explore the blog and llms.txt, check the live resources, or reach out via Telegram (farishanugraha) / GitHub (github.com/farishan) if you want to collaborate or need a hand. Try the guestbook above to say hi.</p>
+  </section>
+
   <section id="links">
     <h2>Links</h2>
     <div class="list">
@@ -238,11 +255,35 @@ document.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click'
   document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected',x===t)});
   document.querySelectorAll('.panel').forEach(function(p){p.hidden=p.dataset.p!==t.dataset.t});
 })});
-document.getElementById('theme').addEventListener('click',function(){
-  var r=document.documentElement,d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);
-  r.dataset.theme=d?'light':'dark';
-});
+document.getElementById('theme').addEventListener('click',function(){var r=document.documentElement,cur=r.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var next=cur==='dark'?'light':'dark';r.dataset.theme=next;try{localStorage.setItem('theme',next);}catch(e){}});
 document.getElementById('yr').textContent=new Date().getFullYear();
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+async function loadGuestbook(){
+  const list=document.getElementById('gb-list');
+  try{
+    const r=await fetch('/api/notes',{cache:'no-store'});
+    const d=await r.json();
+    list.innerHTML=(d||[]).slice().reverse().map(x=>`<div><span><strong>${esc(x.author||'anon')}</strong>: ${esc(x.text)}</span><span class="muted">#${x.id}</span></div>`).join('')||'<div class="empty"><h3>No notes yet</h3><p class="muted">Be the first to sign.</p></div>';
+  }catch(e){list.innerHTML='<div><span>error: '+esc(e)+'</span></div>';}
+}
+const gbf=document.getElementById('gb-form');
+if(gbf){gbf.addEventListener('submit',async function(e){
+  e.preventDefault();
+  const fd=new FormData(gbf);
+  const author=(fd.get('author')||'').toString().trim()||'visitor';
+  const text=(fd.get('text')||'').toString().trim();
+  const st=document.getElementById('gb-status');
+  if(!text){st.textContent='message required';return;}
+  st.textContent='sending…';
+  try{
+    const r=await fetch('/api/notes',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({author:author,text:text})});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    gbf.reset();
+    st.textContent='posted ✓';
+    loadGuestbook();
+  }catch(err){st.textContent='failed: '+err.message;}
+});}
+loadGuestbook();
 async function load(){
   try{
     const r=await fetch('resources.txt',{cache:'no-store'});

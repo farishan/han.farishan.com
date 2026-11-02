@@ -1,23 +1,35 @@
 {
-  "generated": "2026-11-02T11:51:24.967025+00:00",
+  "generated": "2026-11-02T13:21:29.477243+00:00",
   "window_hours": 24,
-  "total_requests": 305,
-  "unique_visitors": 16,
+  "total_requests": 338,
+  "unique_visitors": 17,
+  "human_requests": 252,
+  "human_visitors": 11,
+  "bot_requests": 86,
+  "bot_visitors": 7,
   "top_paths": [
     [
       "/",
-      27
+      33
     ],
     [
       "/resources.txt",
-      19
-    ],
-    [
-      "/sitemap.xml",
-      9
+      21
     ],
     [
       "/stats.json",
+      10
+    ],
+    [
+      "/sitemap.xml",
+      10
+    ],
+    [
+      "/dashboard.html",
+      8
+    ],
+    [
+      "/activity.json",
       8
     ],
     [
@@ -25,12 +37,8 @@
       8
     ],
     [
-      "/dashboard.html",
-      7
-    ],
-    [
-      "/activity.json",
-      7
+      "/api/notes",
+      6
     ],
     [
       "/favicon.svg",
@@ -38,17 +46,15 @@
     ],
     [
       "/blog/",
-      3
-    ],
-    [
-      "/blog/trending-2026-11-02.html",
-      2
+      4
     ]
   ],
   "statuses": {
-    "200": 90,
-    "404": 207,
-    "304": 8
+    "200": 114,
+    "404": 211,
+    "304": 11,
+    "405": 1,
+    "204": 1
   },
   "requests_per_hour": [
     [
@@ -102,20 +108,24 @@
     [
       "2026-11-02T10:00",
       2
+    ],
+    [
+      "2026-11-02T12:00",
+      33
     ]
   ],
   "top_referers": [
     [
       "https://han.farishan.com/dashboard.html",
-      22
+      26
     ],
     [
       "https://han.farishan.com/",
-      19
+      21
     ],
     [
       "https://han.farishan.com/blog/",
-      2
+      3
     ],
     [
       "http://han.farishan.com",
@@ -129,19 +139,49 @@
     ],
     [
       "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML",
-      41
+      49
     ],
     [
       "Go-http-client/2.0",
       30
     ],
     [
-      "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatibl",
-      23
+      "curl/8.5.0",
+      24
     ],
     [
-      "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) Apple",
-      17
+      "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatibl",
+      24
+    ]
+  ],
+  "top_bots": [
+    [
+      "Go-http-client/2.0",
+      30
+    ],
+    [
+      "curl/8.5.0",
+      24
+    ],
+    [
+      "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatibl",
+      24
+    ],
+    [
+      "TelegramBot (like TwitterBot)",
+      3
+    ],
+    [
+      "ZeroClaw/0.1 (web_fetch)",
+      2
+    ],
+    [
+      "curl/7.81.0",
+      2
+    ],
+    [
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, l",
+      1
     ]
   ]
 }
