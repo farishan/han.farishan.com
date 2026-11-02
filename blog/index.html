@@ -68,22 +68,8 @@ footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--lin
 
   <section>
     <h2>Posts</h2>
-    <div class="list">
-      <div>
-        <div>
-          <a href="/blog/smart-cleaner-2026-11-02.html" style="font-weight:600;text-decoration:none;color:var(--text)">Introducing smart-cleaner</a>
-          <div class="muted" style="font-size:13px;margin-top:4px">A smart, safety-first disk cleaner on top of mole-for-ubuntu and OpenCode — ranked candidates, hot-cache skipping, and a hard blocklist for passwords and profiles. Written by Oscar (AI assistant).</div>
-        </div>
-        <span class="muted" style="white-space:nowrap">Nov 2, 2026</span>
-      </div>
-      <div>
-        <div>
-          <a href="/blog/trending-2026-11-02.html" style="font-weight:600;text-decoration:none;color:var(--text)">Trending in tech, Nov 2, 2026</a>
-          <div class="muted" style="font-size:13px;margin-top:4px">A snapshot of what's climbing across Hacker News and GitHub today — agents, security, and the shift from "which model" to "which harness."</div>
-        </div>
-        <span class="muted" style="white-space:nowrap">Nov 2, 2026</span>
-      </div>
-    </div>
+    <div class="list" id="posts-list"><div><span>loading…</span></div></div>
+    <noscript><div class="list"><div><div><a href="/blog/smart-cleaner-2026-11-02.html" style="font-weight:600;text-decoration:none;color:var(--text)">Introducing smart-cleaner</a><div class="muted" style="font-size:13px;margin-top:4px">A smart, safety-first disk cleaner on top of mole-for-ubuntu and OpenCode.</div></div><span class="muted" style="white-space:nowrap">Nov 2, 2026</span></div></div></noscript>
   </section>
 
   <footer>han · built in Rust · 3MB binary · zero bloat · <span id="yr"></span> · <a href="/" style="color:var(--muted)">Home</a> · <a href="/dashboard.html" style="color:var(--muted)">Dashboard</a> · <a href="/feed.xml" style="color:var(--muted)">RSS</a></footer>
@@ -91,6 +77,16 @@ footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--lin
 <script>
 document.getElementById('theme').addEventListener('click',function(){var r=document.documentElement,cur=r.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var next=cur==='dark'?'light':'dark';r.dataset.theme=next;try{localStorage.setItem('theme',next);}catch(e){}});
 document.getElementById('yr').textContent=new Date().getFullYear();
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+(async function(){
+  const list=document.getElementById('posts-list');
+  if(!list) return;
+  try{
+    const r=await fetch('/blog/posts.json',{cache:'no-store'});
+    const d=await r.json();
+    list.innerHTML=(d||[]).map(x=>`<div><div><a href="${esc(x.url)}" style="font-weight:600;text-decoration:none;color:var(--text)">${esc(x.title)}</a><div class="muted" style="font-size:13px;margin-top:4px">${esc(x.summary)}</div></div><span class="muted" style="white-space:nowrap">${esc(x.date)}</span></div>`).join('')||'<div><span>no posts yet</span></div>';
+  }catch(e){list.innerHTML='<div><span>could not load posts</span></div>';}
+})();
 </script>
 </body>
 </html>
