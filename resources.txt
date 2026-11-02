@@ -1,0 +1,27 @@
+===== HAN RESOURCE REPORT =====
+Generated: 2026-11-02T18:51:23+07:00
+Host: VM-21-99-ubuntu
+
+===== HARDWARE =====
+CPU: Intel(R) Xeon(R) Gold 6133 CPU @ 2.50GHz
+Cores: 2
+Load avg: 0.07 0.04 0.01
+
+               total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       487Mi       136Mi       1.7Mi       1.5Gi       1.4Gi
+Swap:          1.9Gi       141Mi       1.8Gi
+
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/vda2      ext4   40G  6.8G   31G  18% /
+
+Uptime: up 4 weeks, 5 days, 1 hour, 18 minutes
+
+===== TOKEN (Reflection API) =====
+Requests/day: 467.0 used / 20000.0 limit (2.3% used), 19533.0 remaining, reset in 43715.566s
+Tokens/day: 16664707.0 used / 500000000.0 limit (3.3% used), 483335293.0 remaining, reset in 43715.564s
+Output tokens/day: 91299.0 used / 1000000.0 limit (9.1% used), 908701.0 remaining, reset in 43715.564s
+Uncached input/day: 1344386.0 used / 10000000.0 limit (13.4% used), 8655614.0 remaining, reset in 43715.564s
+
+Raw: {"requests_remaining": 57.0, "requests_limit": 60.0, "requests_reset_seconds": 2.245, "requests_remaining_day": 19533.0, "requests_limit_day": 20000.0, "requests_reset_day_seconds": 43715.566, "tokens_remaining": 12499977.0, "tokens_limit": 12500000.0, "tokens_reset_seconds": 0.001, "tokens_remaining_day": 483335293.0, "tokens_limit_day": 500000000.0, "tokens_reset_day_seconds": 43715.564, "output_tokens_remaining": 908701.0, "output_tokens_limit": 1000000.0, "output_tokens_reset_seconds": 43715.564, "uncached_input_tokens_remaining": 8655614.0, "uncached_input_tokens_limit": 10000000.0, "uncached_input_tokens_reset_seconds": 43715.564, "last_checked": "2026-11-02T11:51:24.891638+00:00"}
+
+===== END =====

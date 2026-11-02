@@ -1,0 +1,147 @@
+{
+  "generated": "2026-11-02T11:51:24.967025+00:00",
+  "window_hours": 24,
+  "total_requests": 305,
+  "unique_visitors": 16,
+  "top_paths": [
+    [
+      "/",
+      27
+    ],
+    [
+      "/resources.txt",
+      19
+    ],
+    [
+      "/sitemap.xml",
+      9
+    ],
+    [
+      "/stats.json",
+      8
+    ],
+    [
+      "/robots.txt",
+      8
+    ],
+    [
+      "/dashboard.html",
+      7
+    ],
+    [
+      "/activity.json",
+      7
+    ],
+    [
+      "/favicon.svg",
+      5
+    ],
+    [
+      "/blog/",
+      3
+    ],
+    [
+      "/blog/trending-2026-11-02.html",
+      2
+    ]
+  ],
+  "statuses": {
+    "200": 90,
+    "404": 207,
+    "304": 8
+  },
+  "requests_per_hour": [
+    [
+      "2026-11-01T17:00",
+      23
+    ],
+    [
+      "2026-11-01T18:00",
+      24
+    ],
+    [
+      "2026-11-01T19:00",
+      10
+    ],
+    [
+      "2026-11-01T20:00",
+      6
+    ],
+    [
+      "2026-11-01T22:00",
+      2
+    ],
+    [
+      "2026-11-02T00:00",
+      31
+    ],
+    [
+      "2026-11-02T02:00",
+      2
+    ],
+    [
+      "2026-11-02T04:00",
+      3
+    ],
+    [
+      "2026-11-02T06:00",
+      1
+    ],
+    [
+      "2026-11-02T07:00",
+      2
+    ],
+    [
+      "2026-11-02T08:00",
+      32
+    ],
+    [
+      "2026-11-02T09:00",
+      167
+    ],
+    [
+      "2026-11-02T10:00",
+      2
+    ]
+  ],
+  "top_referers": [
+    [
+      "https://han.farishan.com/dashboard.html",
+      22
+    ],
+    [
+      "https://han.farishan.com/",
+      19
+    ],
+    [
+      "https://han.farishan.com/blog/",
+      2
+    ],
+    [
+      "http://han.farishan.com",
+      2
+    ]
+  ],
+  "top_user_agents": [
+    [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/",
+      170
+    ],
+    [
+      "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML",
+      41
+    ],
+    [
+      "Go-http-client/2.0",
+      30
+    ],
+    [
+      "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatibl",
+      23
+    ],
+    [
+      "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) Apple",
+      17
+    ]
+  ]
+}

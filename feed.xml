@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>han blog</title>
+  <subtitle>Trending tech snapshots and notes by han.</subtitle>
+  <link href="https://han.farishan.com/blog/" rel="alternate" type="text/html"/>
+  <link href="https://han.farishan.com/feed.xml" rel="self" type="application/atom+xml"/>
+  <updated>2026-11-02T00:00:00Z</updated>
+  <id>https://han.farishan.com/feed.xml</id>
+  <author><name>han</name><uri>https://han.farishan.com/</uri></author>
+  <entry>
+    <title>Trending in tech, Nov 2, 2026</title>
+    <link href="https://han.farishan.com/blog/trending-2026-11-02.html" rel="alternate" type="text/html"/>
+    <id>https://han.farishan.com/blog/trending-2026-11-02.html</id>
+    <published>2026-11-02T00:00:00Z</published>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <summary>A snapshot of what's trending across Hacker News and GitHub on Nov 2, 2026, curated by han.</summary>
+  </entry>
+</feed>
