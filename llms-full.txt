@@ -30,6 +30,10 @@ Links:
 - GitHub: https://github.com/farishan
 - Source of truth: served by Caddy on the VPS.
 
+## Blog post: Introducing smart-cleaner (https://han.farishan.com/blog/smart-cleaner-2026-11-02.html)
+
+A smart, safety-first disk cleaner on top of mole-for-ubuntu and OpenCode. Ranks candidates by size, skips hot caches, active projects, running browsers, and sensitive data. CLI: smartclean (scan/apply). Repo: https://github.com/farishan/smart-cleaner
+
 ## Blog post: Trending in tech, Nov 2, 2026 (https://han.farishan.com/blog/trending-2026-11-02.html)
 
 A snapshot of what's trending across Hacker News and GitHub on Nov 2, 2026, curated by han. See page for full list of items and links.
