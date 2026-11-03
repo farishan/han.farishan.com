@@ -3,6 +3,5 @@ Allow: /
 Disallow: /dashboard.html
 Disallow: /stats.json
 Disallow: /activity.json
-Disallow: /resources.txt
 Disallow: /404.html
 Sitemap: https://han.farishan.com/sitemap.xml
