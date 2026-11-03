@@ -1,174 +1,205 @@
 {
-  "generated": "2026-11-02T13:21:29.477243+00:00",
+  "generated": "2026-11-03T11:57:13.377927+00:00",
   "window_hours": 24,
-  "total_requests": 338,
-  "unique_visitors": 17,
-  "human_requests": 252,
-  "human_visitors": 11,
-  "bot_requests": 86,
-  "bot_visitors": 7,
+  "total_requests": 257,
+  "unique_visitors": 16,
+  "human_requests": 88,
+  "human_visitors": 13,
+  "bot_requests": 169,
+  "bot_visitors": 5,
   "top_paths": [
     [
+      "/api/notes",
+      94
+    ],
+    [
       "/",
-      33
+      48
     ],
     [
       "/resources.txt",
-      21
-    ],
-    [
-      "/stats.json",
-      10
+      17
     ],
     [
       "/sitemap.xml",
-      10
-    ],
-    [
-      "/dashboard.html",
-      8
-    ],
-    [
-      "/activity.json",
-      8
+      15
     ],
     [
       "/robots.txt",
-      8
-    ],
-    [
-      "/api/notes",
-      6
-    ],
-    [
-      "/favicon.svg",
-      5
-    ],
-    [
-      "/blog/",
-      4
-    ]
-  ],
-  "statuses": {
-    "200": 114,
-    "404": 211,
-    "304": 11,
-    "405": 1,
-    "204": 1
-  },
-  "requests_per_hour": [
-    [
-      "2026-11-01T17:00",
-      23
-    ],
-    [
-      "2026-11-01T18:00",
-      24
-    ],
-    [
-      "2026-11-01T19:00",
       10
     ],
     [
-      "2026-11-01T20:00",
+      "/blog/posts.json",
+      9
+    ],
+    [
+      "/blog/",
+      8
+    ],
+    [
+      "/blog/smart-cleaner-2026-11-02.html",
+      8
+    ],
+    [
+      "/dashboard.html",
+      7
+    ],
+    [
+      "/og.png",
       6
-    ],
-    [
-      "2026-11-01T22:00",
-      2
-    ],
-    [
-      "2026-11-02T00:00",
-      31
-    ],
-    [
-      "2026-11-02T02:00",
-      2
-    ],
-    [
-      "2026-11-02T04:00",
-      3
-    ],
-    [
-      "2026-11-02T06:00",
-      1
-    ],
-    [
-      "2026-11-02T07:00",
-      2
-    ],
-    [
-      "2026-11-02T08:00",
-      32
-    ],
-    [
-      "2026-11-02T09:00",
-      167
-    ],
-    [
-      "2026-11-02T10:00",
-      2
-    ],
+    ]
+  ],
+  "statuses": {
+    "304": 17,
+    "200": 206,
+    "404": 11,
+    "405": 1,
+    "204": 1,
+    "401": 10,
+    "400": 6,
+    "429": 5
+  },
+  "requests_per_hour": [
     [
       "2026-11-02T12:00",
       33
+    ],
+    [
+      "2026-11-02T13:00",
+      97
+    ],
+    [
+      "2026-11-02T14:00",
+      2
+    ],
+    [
+      "2026-11-02T15:00",
+      67
+    ],
+    [
+      "2026-11-02T16:00",
+      11
+    ],
+    [
+      "2026-11-02T17:00",
+      3
+    ],
+    [
+      "2026-11-02T18:00",
+      13
+    ],
+    [
+      "2026-11-02T19:00",
+      3
+    ],
+    [
+      "2026-11-02T21:00",
+      2
+    ],
+    [
+      "2026-11-02T22:00",
+      1
+    ],
+    [
+      "2026-11-02T23:00",
+      1
+    ],
+    [
+      "2026-11-03T01:00",
+      2
+    ],
+    [
+      "2026-11-03T03:00",
+      4
+    ],
+    [
+      "2026-11-03T05:00",
+      2
+    ],
+    [
+      "2026-11-03T07:00",
+      2
+    ],
+    [
+      "2026-11-03T08:00",
+      1
+    ],
+    [
+      "2026-11-03T09:00",
+      1
+    ],
+    [
+      "2026-11-03T11:00",
+      12
     ]
   ],
   "top_referers": [
     [
-      "https://han.farishan.com/dashboard.html",
-      26
+      "https://han.farishan.com/",
+      45
     ],
     [
-      "https://han.farishan.com/",
-      21
+      "https://han.farishan.com/dashboard.html",
+      5
     ],
     [
       "https://han.farishan.com/blog/",
-      3
+      2
+    ],
+    [
+      "https://han.farishan.com/blog/smart-cleaner-2026-11-02.html",
+      2
     ],
     [
       "http://han.farishan.com",
       2
+    ],
+    [
+      "https://han.farishan.com/resources.txt",
+      1
     ]
   ],
   "top_user_agents": [
     [
-      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/",
-      170
-    ],
-    [
-      "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML",
-      49
-    ],
-    [
-      "Go-http-client/2.0",
-      30
+      "curl/7.81.0",
+      69
     ],
     [
       "curl/8.5.0",
-      24
+      63
+    ],
+    [
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, l",
+      35
     ],
     [
       "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatibl",
-      24
+      22
+    ],
+    [
+      "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML",
+      16
     ]
   ],
   "top_bots": [
     [
-      "Go-http-client/2.0",
-      30
+      "curl/7.81.0",
+      69
     ],
     [
       "curl/8.5.0",
-      24
+      63
     ],
     [
       "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatibl",
-      24
+      22
     ],
     [
-      "TelegramBot (like TwitterBot)",
+      "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) Ap",
+      6
+    ],
+    [
+      "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.c",
       3
     ],
     [
@@ -176,12 +207,12 @@
       2
     ],
     [
-      "curl/7.81.0",
+      "TelegramBot (like TwitterBot)",
       2
     ],
     [
-      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, l",
-      1
+      "Googlebot-Image/1.0",
+      2
     ]
   ]
 }
