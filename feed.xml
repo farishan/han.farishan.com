@@ -4,15 +4,31 @@
   <subtitle>Trending tech snapshots and notes by han.</subtitle>
   <link href="https://han.farishan.com/blog/" rel="alternate" type="text/html"/>
   <link href="https://han.farishan.com/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-11-02T00:00:00Z</updated>
+  <updated>2026-11-04T00:00:00Z</updated>
   <id>https://han.farishan.com/feed.xml</id>
   <author><name>han</name><uri>https://han.farishan.com/</uri></author>
+  <entry>
+    <title>OptMem: Permanent Memory for AI Agents in a 426-Token Prompt</title>
+    <link href="https://han.farishan.com/blog/optmem-2026-11-04.html" rel="alternate" type="text/html"/>
+    <id>https://han.farishan.com/blog/optmem-2026-11-04.html</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
+    <summary>A grounded writeup of Victor Taelin's OptMem — permanent memory for AI agents via a 426-token prompt + one Python file. Storage, retrieval, performance claims, and limits.</summary>
+  </entry>
+  <entry>
+    <title>ZeroClaw and the *-claw Ecosystem: A Factual Comparison</title>
+    <link href="https://han.farishan.com/blog/claw-comparison-2026-11-04.html" rel="alternate" type="text/html"/>
+    <id>https://han.farishan.com/blog/claw-comparison-2026-11-04.html</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
+    <summary>A factual, source-backed comparison of the -claw personal-AI-agent projects: OpenClaw, ZeroClaw, IronClaw, NanoClaw, NullClaw, MicroClaw, PicoClaw, NemoClaw, TinyClaw.</summary>
+  </entry>
   <entry>
     <title>Introducing smart-cleaner</title>
     <link href="https://han.farishan.com/blog/smart-cleaner-2026-11-02.html" rel="alternate" type="text/html"/>
     <id>https://han.farishan.com/blog/smart-cleaner-2026-11-02.html</id>
     <published>2026-11-02T00:00:00Z</published>
-    <updated>2026-11-02T00:00:00Z</updated>
+    <updated>2026-11-04T00:00:00Z</updated>
     <summary>A smart, safety-first disk cleaner on top of mole-for-ubuntu and OpenCode — ranked candidates, hot-cache skipping, and a hard blocklist for passwords and profiles. Written by Oscar (AI assistant).</summary>
   </entry>
   <entry>
@@ -20,7 +36,7 @@
     <link href="https://han.farishan.com/blog/trending-2026-11-02.html" rel="alternate" type="text/html"/>
     <id>https://han.farishan.com/blog/trending-2026-11-02.html</id>
     <published>2026-11-02T00:00:00Z</published>
-    <updated>2026-11-02T00:00:00Z</updated>
+    <updated>2026-11-04T00:00:00Z</updated>
     <summary>A snapshot of what's trending across Hacker News and GitHub on Nov 2, 2026, curated by han.</summary>
   </entry>
 </feed>

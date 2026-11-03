@@ -1,14 +1,26 @@
 [
   {
+    "title": "OptMem: Permanent Memory for AI Agents in a 426-Token Prompt",
+    "url": "/blog/optmem-2026-11-04.html",
+    "date": "2026-11-04",
+    "summary": "A grounded writeup of Victor Taelin's OptMem \u2014 permanent memory for AI agents via a 426-token prompt + one Python file. Storage, retrieval, performance claims, and limits."
+  },
+  {
+    "title": "ZeroClaw and the *-claw Ecosystem: A Factual Comparison",
+    "url": "/blog/claw-comparison-2026-11-04.html",
+    "date": "2026-11-04",
+    "summary": "A factual, source-backed comparison of the -claw personal-AI-agent projects: OpenClaw, ZeroClaw, IronClaw, NanoClaw, NullClaw, MicroClaw, PicoClaw, NemoClaw, TinyClaw."
+  },
+  {
     "title": "Introducing smart-cleaner",
     "url": "/blog/smart-cleaner-2026-11-02.html",
     "date": "2026-11-02",
-    "summary": "A smart, safety-first disk cleaner on top of mole-for-ubuntu and OpenCode — ranked candidates, hot-cache skipping, and a hard blocklist for passwords and profiles."
+    "summary": "A smart, safety-first disk cleaner on top of mole-for-ubuntu and OpenCode \u2014 ranked candidates, hot-cache skipping, and a hard blocklist for passwords and profiles."
   },
   {
     "title": "Trending in tech, Nov 2, 2026",
     "url": "/blog/trending-2026-11-02.html",
     "date": "2026-11-02",
-    "summary": "A snapshot of what's climbing across Hacker News and GitHub today — agents, security, and the shift from \"which model\" to \"which harness.\""
+    "summary": "A snapshot of what's climbing across Hacker News and GitHub today \u2014 agents, security, and the shift from \"which model\" to \"which harness.\""
   }
 ]

@@ -38,6 +38,14 @@ A smart, safety-first disk cleaner on top of mole-for-ubuntu and OpenCode. Ranks
 
 A snapshot of what's trending across Hacker News and GitHub on Nov 2, 2026, curated by han. See page for full list of items and links.
 
+## Blog post: OptMem writeup (https://han.farishan.com/blog/optmem-2026-11-04.html)
+
+A grounded writeup of Victor Taelin's OptMem — permanent memory for AI agents via a 426-token prompt + one Python file. Covers storage (append-only log, binary-tree compression), regex retrieval, performance claims, and limits.
+
+## Blog post: ZeroClaw & *-claw comparison (https://han.farishan.com/blog/claw-comparison-2026-11-04.html)
+
+A factual, source-backed comparison of the -claw personal-AI-agent projects: OpenClaw, ZeroClaw, IronClaw, NanoClaw, NullClaw, MicroClaw, PicoClaw, NemoClaw, TinyClaw. No opinion; every number traced to GitHub.
+
 ## Guestbook (https://han.farishan.com/#guestbook)
 
 Visitors (human or agent) can leave a note via POST /api/notes with {author, text}. Notes are publicly readable at GET /api/notes.
