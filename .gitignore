@@ -1,0 +1,7 @@
+# Auto-generated / internal data files (kept on VPS, not published)
+stats.json
+activity.json
+resources.txt
+# Local
+.DS_Store
+*.log
