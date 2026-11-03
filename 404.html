@@ -26,7 +26,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
 <style>
 :root{--bg:#ffffff;--surface:#f2f2f2;--line:#d4d4d4;--line-strong:#8a8a8a;--text:#141414;--muted:#6b6b6b;--ink:#141414;--on-ink:#ffffff;--r:4px;--r-lg:8px;--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:40px;--font:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;color-scheme:light;}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121212;--surface:#1e1e1e;--line:#3a3a3a;--line-strong:#7a7a7a;--text:#ededed;--muted:#9a9a9a;--ink:#ededed;--on-ink:#121212;color-scheme:dark;}}
@@ -40,10 +41,13 @@ a{color:var(--ink)}
 .btn.secondary{background:transparent;color:var(--text)}
 .muted{color:var(--muted);font-size:13px}
 footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--on-ink);padding:8px 12px;border-radius:var(--r);z-index:1000}
+.skip-link:focus{left:var(--s4);top:var(--s4)}
 </style>
 </head>
 <body>
-<div class="wrap">
+<a class="skip-link" href="#main">Skip to content</a>
+<main class="wrap" id="main">
   <p class="muted" style="font-family:var(--mono)">han.farishan.com</p>
   <h1>404</h1>
   <p>That page doesn't exist. Maybe it moved, or the link is stale.</p>
@@ -53,6 +57,6 @@ footer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--lin
     <a class="btn secondary" href="/dashboard.html">Dashboard</a>
   </div>
   <footer>han · built in Rust · 3MB binary · zero bloat · <a href="/" style="color:var(--muted)">Home</a> · <a href="/blog/" style="color:var(--muted)">Blog</a></footer>
-</div>
+</main>
 </body>
 </html>
