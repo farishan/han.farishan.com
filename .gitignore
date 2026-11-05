@@ -5,3 +5,4 @@ resources.txt
 # Local
 .DS_Store
 *.log
+ip_cache.json
