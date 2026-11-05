@@ -1,5 +1,11 @@
 [
   {
+    "title": "workflow-kit: ship agentic code changes with a repeatable loop",
+    "url": "/blog/workflow-kit-2026-11-06.html",
+    "date": "2026-11-06",
+    "summary": "A drop-in agentic dev workflow kit for OpenCode, Claude and Cursor: slash commands, subagent personas, a universal verifier, and a spec \u2192 implement \u2192 verify \u2192 review \u2192 ship loop. Free core (MIT) plus Pro/Team packs on Gumroad."
+  },
+  {
     "title": "OptMem: Permanent Memory for AI Agents in a 426-Token Prompt",
     "url": "/blog/optmem-2026-11-04.html",
     "date": "2026-11-04",

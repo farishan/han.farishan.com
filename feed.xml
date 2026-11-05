@@ -4,9 +4,17 @@
   <subtitle>Trending tech snapshots and notes by han.</subtitle>
   <link href="https://han.farishan.com/blog/" rel="alternate" type="text/html"/>
   <link href="https://han.farishan.com/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-11-04T00:00:00Z</updated>
+  <updated>2026-11-06T00:00:00Z</updated>
   <id>https://han.farishan.com/feed.xml</id>
   <author><name>han</name><uri>https://han.farishan.com/</uri></author>
+  <entry>
+    <title>workflow-kit: ship agentic code changes with a repeatable loop</title>
+    <link href="https://han.farishan.com/blog/workflow-kit-2026-11-06.html" rel="alternate" type="text/html"/>
+    <id>https://han.farishan.com/blog/workflow-kit-2026-11-06.html</id>
+    <published>2026-11-06T00:00:00Z</published>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>A drop-in agentic dev workflow kit for OpenCode, Claude and Cursor: slash commands, subagent personas, a universal verifier, and a spec → implement → verify → review → ship loop. Free core (MIT) plus Pro/Team packs on Gumroad.</summary>
+  </entry>
   <entry>
     <title>OptMem: Permanent Memory for AI Agents in a 426-Token Prompt</title>
     <link href="https://han.farishan.com/blog/optmem-2026-11-04.html" rel="alternate" type="text/html"/>
