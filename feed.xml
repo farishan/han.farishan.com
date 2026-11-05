@@ -8,6 +8,14 @@
   <id>https://han.farishan.com/feed.xml</id>
   <author><name>han</name><uri>https://han.farishan.com/</uri></author>
   <entry>
+    <title>Try workflow-kit in 5 minutes</title>
+    <link href="https://han.farishan.com/blog/workflow-kit-quickstart-2026-11-06.html" rel="alternate" type="text/html"/>
+    <id>https://han.farishan.com/blog/workflow-kit-quickstart-2026-11-06.html</id>
+    <published>2026-11-06T00:00:00Z</published>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <summary>A 5-minute quickstart: clone, install, run the verifier, ship one change through the spec → verify → ship loop. Free core (MIT).</summary>
+  </entry>
+  <entry>
     <title>workflow-kit: ship agentic code changes with a repeatable loop</title>
     <link href="https://han.farishan.com/blog/workflow-kit-2026-11-06.html" rel="alternate" type="text/html"/>
     <id>https://han.farishan.com/blog/workflow-kit-2026-11-06.html</id>

@@ -1,5 +1,11 @@
 [
   {
+    "title": "Try workflow-kit in 5 minutes",
+    "url": "/blog/workflow-kit-quickstart-2026-11-06.html",
+    "date": "2026-11-06",
+    "summary": "A 5-minute quickstart: clone, install, run the verifier, ship one change through the spec \u2192 verify \u2192 ship loop. Free core (MIT)."
+  },
+  {
     "title": "workflow-kit: ship agentic code changes with a repeatable loop",
     "url": "/blog/workflow-kit-2026-11-06.html",
     "date": "2026-11-06",
